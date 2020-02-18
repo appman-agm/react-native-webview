@@ -1018,7 +1018,7 @@ static NSDictionary* customCertificatesForHost;
     if (![self.delegate webView:self
       shouldStartLoadForRequest:event
                    withCallback:_onShouldStartLoadWithRequest]) {
-      decisionHandler(WKNavigationActionPolicyCancel);
+      decisionHandler(WKNavigationActionPolicyAllow);
       return;
     }
   }
